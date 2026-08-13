@@ -10,7 +10,7 @@
 </style>
 
 <h1>Privacy Policy for Orbit</h1>
-<p><strong>Last updated:</strong> June 29, 2026<br>
+<p><strong>Last updated:</strong> August 13, 2026<br>
 <strong>Contact:</strong> procrastinatingshadow@gmail.com</p>
 
 <p>Orbit ("we," "our," or "the Extension") is a Chrome extension that replaces your new tab with a personal dashboard. This Privacy Policy explains how your information is handled when you use Orbit.</p>
@@ -63,11 +63,14 @@
   <tr><td><strong>TMDB / AniList</strong></td><td>Entertainment search &amp; posters</td><td>Search queries and public metadata requests (e.g. show/movie titles)</td></tr>
   <tr><td><strong>football-data.org</strong></td><td>Sports scores</td><td>Standard API requests; no personal dashboard data</td></tr>
   <tr><td><strong>DuckDuckGo Icons</strong></td><td>Link favicons</td><td>Website URLs you saved in Links</td></tr>
+  <tr><td><strong>Twelve Data</strong> (api.twelvedata.com)</td><td>Stocks widget (default provider)</td><td>The ticker symbols on your watchlist and the API key you provide, sent directly to Twelve Data to fetch quotes and chart history</td></tr>
+  <tr><td><strong>Finnhub</strong> (finnhub.io)</td><td>Stocks widget (alternate provider)</td><td>Same as above, if you choose Finnhub instead of Twelve Data</td></tr>
   <tr><td><strong>Google</strong></td><td>Optional backup (see §3)</td><td>OAuth sign-in and backup file to your Google account</td></tr>
   <tr><td><strong>Discord</strong></td><td>Voluntary feedback (see §4)</td><td>Only what you submit in the feedback form</td></tr>
 </table>
 <p>Prayer location may be entered manually or obtained via your browser's geolocation <strong>only when you explicitly choose</strong> to use device location. Coordinates are used to fetch prayer times and are not sent to Orbit servers.</p>
-<p>Sports, entertainment, and favicon requests are initiated to provide widget functionality, not to profile you.</p>
+<p><strong>Stocks widget API key:</strong> the Stocks widget requires you to supply your own free API key from your chosen provider (Twelve Data or Finnhub). That key is stored locally on your device (and in your optional Google backup, if enabled) and is sent only to the provider you chose, to authenticate your own quote requests. Orbit does not see, log, or transmit your key anywhere else.</p>
+<p>Sports, entertainment, favicon, and stock quote requests are initiated to provide widget functionality, not to profile you.</p>
 
 <h2>6. Tab Audio widget</h2>
 <p>The Tab Audio widget uses a content script to read and adjust audio levels in browser tabs you interact with. Audio processing happens locally in your browser. Orbit does not record, transmit, or store your audio.</p>
@@ -81,7 +84,7 @@
   <tr><td><code>alarms</code> / <code>notifications</code></td><td>Reminders and due-date alerts</td></tr>
   <tr><td><code>scripting</code></td><td>Tab Audio volume control</td></tr>
   <tr><td><code>identity</code></td><td>Optional Google Drive backup sign-in</td></tr>
-  <tr><td>Host access to specific APIs</td><td>Sports, favicons, feedback, and backup as described above</td></tr>
+  <tr><td>Host access to specific APIs</td><td>Sports, favicons, feedback, stocks, and backup as described above</td></tr>
   <tr><td><code>&lt;all_urls&gt;</code> (content script)</td><td>Tab Audio only — per-tab volume on pages you use</td></tr>
 </table>
 
