@@ -1,51 +1,103 @@
-<title>Privacy Policy — Orbit</title>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Privacy Policy — Weft</title>
 <style>
-  body { max-width: 720px; margin: 40px auto; padding: 0 20px; font-family: -apple-system, Segoe UI, Roboto, sans-serif; line-height: 1.6; color: #222; }
-  h1 { font-size: 1.8em; }
-  h2 { font-size: 1.3em; margin-top: 2em; border-bottom: 1px solid #ddd; padding-bottom: 4px; }
-  table { border-collapse: collapse; width: 100%; margin: 1em 0; }
-  th, td { border: 1px solid #ccc; padding: 6px 10px; text-align: left; }
-  th { background: #f5f5f5; }
-  code { background: #f0f0f0; padding: 2px 5px; border-radius: 3px; }
+  :root { color-scheme: light dark; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: #fafafa;
+    color: #1c1c1e;
+    -webkit-text-size-adjust: 100%;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 56px 24px 96px; }
+  h1 { font-size: 2rem; margin: 0 0 4px; letter-spacing: -0.02em; }
+  h2 { font-size: 1.2rem; margin: 40px 0 12px; letter-spacing: -0.01em; }
+  p, li { color: #333; }
+  .meta { color: #777; font-size: 0.9rem; margin: 0 0 8px; }
+  .summary {
+    background: #fff; border: 1px solid #e6e6e6; border-radius: 12px;
+    padding: 16px 18px; margin: 24px 0 8px;
+  }
+  hr { border: 0; border-top: 1px solid #e6e6e6; margin: 36px 0; }
+  ul { padding-left: 22px; }
+  li { margin: 6px 0; }
+  a { color: #2563eb; }
+  code {
+    font: 0.85em/1 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    background: #eee; border-radius: 4px; padding: 1px 5px;
+  }
+  .table-scroll { overflow-x: auto; margin: 16px 0; }
+  table { border-collapse: collapse; width: 100%; font-size: 0.92rem; min-width: 520px; }
+  th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid #e6e6e6; vertical-align: top; }
+  th { color: #555; font-weight: 600; }
+  footer { margin-top: 48px; color: #777; font-size: 0.9rem; }
+  @media (prefers-color-scheme: dark) {
+    body { background: #111113; color: #e8e8ea; }
+    p, li { color: #c9c9cf; }
+    .meta, footer { color: #8a8a90; }
+    .summary { background: #1a1a1d; border-color: #2a2a2e; }
+    hr, th, td { border-color: #2a2a2e; }
+    code { background: #26262a; }
+    th { color: #a0a0a6; }
+    a { color: #6ea8fe; }
+  }
 </style>
+</head>
+<body>
+<div class="wrap">
 
-<h1>Privacy Policy for Orbit</h1>
-<p><strong>Last updated:</strong> August 13, 2026<br>
-<strong>Contact:</strong> procrastinatingshadow@gmail.com</p>
+<h1>Privacy Policy for Weft</h1>
+<p class="meta">Last updated: September 3, 2026 &middot; Contact: weftlylabs@gmail.com</p>
 
-<p>Orbit ("we," "our," or "the Extension") is a Chrome extension that replaces your new tab with a personal dashboard. This Privacy Policy explains how your information is handled when you use Orbit.</p>
+<p>Weft (&ldquo;we,&rdquo; &ldquo;our,&rdquo; or &ldquo;the Extension&rdquo;) is a Chrome extension that replaces your new tab with a personal dashboard. This Privacy Policy explains how your information is handled when you use Weft.</p>
 
-<p><strong>Summary:</strong> Orbit is local-first. Your tasks, habits, settings, and other dashboard data stay on your device by default. We do not operate servers that store your dashboard data. Optional features may send limited data to third-party services only when you use those features (see below).</p>
+<div class="summary">
+  <strong>Summary:</strong> Weft is local-first. Your tasks, habits, settings, and other dashboard data stay on your device by default. We do not operate servers that store your dashboard data. Optional features may send limited data to third-party services only when you use those features (see below).
+</div>
+
+<hr />
 
 <h2>1. Information we do not collect</h2>
-<p>Orbit does <strong>not</strong>:</p>
+<p>Weft does <strong>not</strong>:</p>
 <ul>
   <li>Require an account or sign-up to use the extension</li>
-  <li>Run analytics or telemetry to Orbit-operated servers</li>
+  <li>Run analytics or telemetry to Weft-operated servers</li>
   <li>Sell your data</li>
   <li>Use your data for advertising or creditworthiness</li>
 </ul>
 <p>We do not operate user-data servers for your dashboard content.</p>
 
+<hr />
+
 <h2>2. Data stored on your device (default)</h2>
-<p>By default, all dashboard data is stored locally in your browser using Chrome's extension storage (<code>chrome.storage.local</code>), including for example:</p>
+<p>By default, all dashboard data is stored locally in your browser using Chrome&rsquo;s extension storage (<code>chrome.storage.local</code>), including for example:</p>
 <ul>
   <li>Tasks, habits, jobs, links, sticky notes, and entertainment lists</li>
-  <li>Widget layout, wallpaper, theme, and settings</li>
+  <li>Spaces, widget layout, wallpaper, theme, and settings</li>
   <li>Reminders and notification preferences</li>
+  <li>Any API keys or access tokens you enter for optional integrations (see &sect;5)</li>
 </ul>
 <p>This data remains on your device. We cannot access it remotely.</p>
-<p>You can export or import backups manually from <strong>Settings → Data &amp; Backup</strong>.</p>
+<p>You can export or import backups manually from <strong>Settings &rarr; Data &amp; Backup</strong>.</p>
+
+<hr />
 
 <h2>3. Optional Google Drive backup</h2>
-<p>If you turn on <strong>Google backup</strong> in <strong>Settings → Data &amp; Backup</strong>:</p>
+<p>If you turn on <strong>Google backup</strong> in <strong>Settings &rarr; Data &amp; Backup</strong>:</p>
 <ul>
-  <li>You sign in with Google via Chrome's OAuth flow (<code>identity</code> permission).</li>
-  <li>A JSON backup of your dashboard is stored in your Google account's hidden <strong>appDataFolder</strong> (not visible in your normal Drive file list).</li>
-  <li>Sync is direct between your browser and Google. Orbit does not receive or store your Google credentials on any Orbit server.</li>
+  <li>You sign in with Google via Chrome&rsquo;s OAuth flow (<code>identity</code> permission).</li>
+  <li>A JSON backup of your dashboard is stored in your Google account&rsquo;s hidden <strong>appDataFolder</strong> (not visible in your normal Drive file list).</li>
+  <li>Sync is direct between your browser and Google. Weft does not receive or store your Google credentials on any Weft server.</li>
   <li>You can disconnect at any time. Local data on your device is unaffected.</li>
 </ul>
 <p>This feature is <strong>opt-in</strong> and <strong>off by default</strong>.</p>
+
+<hr />
 
 <h2>4. Voluntary feedback (in-app)</h2>
 <p>If you submit a <strong>bug report</strong> or <strong>widget request</strong> from Settings, you may optionally include:</p>
@@ -55,55 +107,99 @@
 </ul>
 <p>That information is sent to our team via <strong>Discord</strong> (a third-party service) only when you click Send. We use it solely to respond to or triage your feedback. Do not include sensitive personal data in feedback messages.</p>
 
+<hr />
+
 <h2>5. Third-party services (feature-specific)</h2>
-<p>When you use certain widgets, the extension may contact third-party services. Orbit does not send your full dashboard to these services.</p>
+<p>When you use certain widgets or integrations, the extension may contact third-party services. Weft does not send your full dashboard to these services. Each row below is only reached when you use that specific feature.</p>
+<div class="table-scroll">
 <table>
-  <tr><th>Service</th><th>When it's used</th><th>What is sent</th></tr>
-  <tr><td><strong>Aladhan</strong> (api.aladhan.com)</td><td>Prayer times widget</td><td>City/country or latitude/longitude you configure or approve for prayer calculations</td></tr>
-  <tr><td><strong>TMDB / AniList</strong></td><td>Entertainment search &amp; posters</td><td>Search queries and public metadata requests (e.g. show/movie titles)</td></tr>
-  <tr><td><strong>football-data.org</strong></td><td>Sports scores</td><td>Standard API requests; no personal dashboard data</td></tr>
-  <tr><td><strong>DuckDuckGo Icons</strong></td><td>Link favicons</td><td>Website URLs you saved in Links</td></tr>
-  <tr><td><strong>Twelve Data</strong> (api.twelvedata.com)</td><td>Stocks widget (default provider)</td><td>The ticker symbols on your watchlist and the API key you provide, sent directly to Twelve Data to fetch quotes and chart history</td></tr>
-  <tr><td><strong>Finnhub</strong> (finnhub.io)</td><td>Stocks widget (alternate provider)</td><td>Same as above, if you choose Finnhub instead of Twelve Data</td></tr>
-  <tr><td><strong>Google</strong></td><td>Optional backup (see §3)</td><td>OAuth sign-in and backup file to your Google account</td></tr>
-  <tr><td><strong>Discord</strong></td><td>Voluntary feedback (see §4)</td><td>Only what you submit in the feedback form</td></tr>
+  <thead>
+    <tr><th>Service</th><th>When it&rsquo;s used</th><th>What is sent</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>Aladhan</strong> (<code>api.aladhan.com</code>)</td><td>Prayer times widget</td><td>City/country or latitude/longitude you configure or approve for prayer calculations</td></tr>
+    <tr><td><strong>BigDataCloud</strong> (<code>api.bigdatacloud.net</code>)</td><td>Prayer widget, only if you choose &ldquo;use device location&rdquo;</td><td>Your approximate latitude/longitude, sent once to convert coordinates into a city/country name</td></tr>
+    <tr><td><strong>TMDB / AniList</strong></td><td>Entertainment search &amp; posters</td><td>Search queries and public metadata requests (e.g. show/movie titles)</td></tr>
+    <tr><td><strong>football-data.org</strong></td><td>Sports scores</td><td>Standard API requests; no personal dashboard data</td></tr>
+    <tr><td><strong>native-stats.org</strong></td><td>Sports widget match detail</td><td>The public match ID being viewed; no personal data</td></tr>
+    <tr><td><strong>GitHub</strong> (<code>api.github.com</code>)</td><td>GitHub pull-request updates integration (opt-in)</td><td>A GitHub personal access token you paste in Settings, used to read your GitHub notifications. The token is stored locally on your device and sent only to GitHub.</td></tr>
+    <tr><td><strong>Twitch</strong> (<code>gql.twitch.tv</code>, <code>static-cdn.jtvnw.net</code>)</td><td>Twitch live-status widget</td><td>The public channel handles you add to the widget, sent to Twitch&rsquo;s public web API to check whether those channels are live. No Twitch account or login is involved.</td></tr>
+    <tr><td><strong>DuckDuckGo Icons</strong> (<code>icons.duckduckgo.com</code>) and <strong>Google favicons</strong> (<code>www.google.com/s2/favicons</code>)</td><td>Favicons for saved links and embedded sites</td><td>The hostnames of websites you saved or embedded</td></tr>
+    <tr><td><strong>Twelve Data</strong> (<code>api.twelvedata.com</code>)</td><td>Stocks widget (default provider)</td><td>The ticker symbols on your watchlist and the API key you provide, sent directly to Twelve Data to fetch quotes and chart history</td></tr>
+    <tr><td><strong>Finnhub</strong> (<code>finnhub.io</code>)</td><td>Stocks widget (alternate provider)</td><td>Same as above, if you choose Finnhub instead of Twelve Data</td></tr>
+    <tr><td><strong>Picsum / Wallhaven</strong> (<code>picsum.photos</code>, <code>wallhaven.cc</code>)</td><td>Wallpaper shuffle, only if you set the shuffle source to &ldquo;online&rdquo;</td><td>A standard image request; no personal data</td></tr>
+    <tr><td><strong>Google</strong> (<code>accounts.google.com</code>, <code>googleapis.com</code>)</td><td>Optional backup (see &sect;3)</td><td>OAuth sign-in and backup file to your Google account</td></tr>
+    <tr><td><strong>Discord</strong></td><td>Voluntary feedback (see &sect;4)</td><td>Only what you submit in the feedback form</td></tr>
+  </tbody>
 </table>
-<p>Prayer location may be entered manually or obtained via your browser's geolocation <strong>only when you explicitly choose</strong> to use device location. Coordinates are used to fetch prayer times and are not sent to Orbit servers.</p>
-<p><strong>Stocks widget API key:</strong> the Stocks widget requires you to supply your own free API key from your chosen provider (Twelve Data or Finnhub). That key is stored locally on your device (and in your optional Google backup, if enabled) and is sent only to the provider you chose, to authenticate your own quote requests. Orbit does not see, log, or transmit your key anywhere else.</p>
-<p>Sports, entertainment, favicon, and stock quote requests are initiated to provide widget functionality, not to profile you.</p>
+</div>
+<p>Prayer location may be entered manually or obtained via your browser&rsquo;s geolocation <strong>only when you explicitly choose</strong> to use device location. Coordinates are used to fetch prayer times (Aladhan) and a place name (BigDataCloud) and are not sent to Weft servers.</p>
+<p><strong>Stocks widget API key:</strong> the Stocks widget requires you to supply your own free API key from your chosen provider (Twelve Data or Finnhub). That key is stored locally on your device (and in your optional Google backup, if enabled) and is sent only to the provider you chose, to authenticate your own quote requests. Weft does not see, log, or transmit your key anywhere else.</p>
+<p><strong>GitHub token:</strong> the GitHub integration requires a personal access token you create yourself with the <code>notifications</code> scope. It is stored locally on your device (and in your optional Google backup, if enabled) and is sent only to GitHub. Weft does not see, log, or transmit your token anywhere else.</p>
+<p>Sports, entertainment, favicon, wallpaper, and stock quote requests are initiated to provide widget functionality, not to profile you.</p>
 
-<h2>6. Tab Audio widget</h2>
-<p>The Tab Audio widget uses a content script to read and adjust audio levels in browser tabs you interact with. Audio processing happens locally in your browser. Orbit does not record, transmit, or store your audio.</p>
+<hr />
 
-<h2>7. Permissions (why the extension asks for them)</h2>
+<h2>6. Embedded Website widget</h2>
+<p>The optional <strong>Embedded Website</strong> widget renders a third-party page of your choosing inside a resizable panel on your dashboard, using a sandboxed iframe. To allow sites that normally block framing, the extension removes the <code>X-Frame-Options</code> and <code>Content-Security-Policy</code> response headers, using <code>declarativeNetRequestWithHostAccess</code>, but <strong>only</strong> for the exact hostnames you add to an embed widget and <strong>only</strong> for iframe (sub-frame) requests. Weft does not read, log, or transmit the contents of embedded pages. The embedded site runs in its own origin as ordinary web content.</p>
+
+<hr />
+
+<h2>7. Tab Audio widget</h2>
+<p>The Tab Audio widget uses a content script to read and adjust audio levels in browser tabs you interact with. Audio processing happens locally in your browser. Weft does not record, transmit, or store your audio.</p>
+
+<hr />
+
+<h2>8. Permissions (why the extension asks for them)</h2>
+<div class="table-scroll">
 <table>
-  <tr><th>Permission</th><th>Purpose</th></tr>
-  <tr><td><code>storage</code> / <code>unlimitedStorage</code></td><td>Save your dashboard locally</td></tr>
-  <tr><td><code>tabs</code> / <code>tabGroups</code></td><td>Tab Audio widget; save tab groups to Links</td></tr>
-  <tr><td><code>contextMenus</code></td><td>"Save tab group to Orbit" right-click action</td></tr>
-  <tr><td><code>alarms</code> / <code>notifications</code></td><td>Reminders and due-date alerts</td></tr>
-  <tr><td><code>scripting</code></td><td>Tab Audio volume control</td></tr>
-  <tr><td><code>identity</code></td><td>Optional Google Drive backup sign-in</td></tr>
-  <tr><td>Host access to specific APIs</td><td>Sports, favicons, feedback, stocks, and backup as described above</td></tr>
-  <tr><td><code>&lt;all_urls&gt;</code> (content script)</td><td>Tab Audio only — per-tab volume on pages you use</td></tr>
+  <thead><tr><th>Permission</th><th>Purpose</th></tr></thead>
+  <tbody>
+    <tr><td><code>storage</code> / <code>unlimitedStorage</code></td><td>Save your dashboard locally</td></tr>
+    <tr><td><code>tabs</code> / <code>tabGroups</code></td><td>Tab Audio widget; save tab groups to Links; open saved tab groups</td></tr>
+    <tr><td><code>contextMenus</code></td><td>&ldquo;Save Tab Group to Weft&rdquo; right-click action</td></tr>
+    <tr><td><code>alarms</code> / <code>notifications</code></td><td>Reminders, prayer, habit, and due-date alerts (including when no Weft tab is open)</td></tr>
+    <tr><td><code>scripting</code></td><td>Tab Audio volume control</td></tr>
+    <tr><td><code>identity</code></td><td>Optional Google Drive backup sign-in</td></tr>
+    <tr><td><code>declarativeNetRequestWithHostAccess</code></td><td>Embedded Website widget: remove framing-block headers for the specific sites you embed (see &sect;6)</td></tr>
+    <tr><td>Host access to specific APIs</td><td>Sports, favicons, GitHub, Twitch, feedback, and backup as described above</td></tr>
+    <tr><td><code>&lt;all_urls&gt;</code> (content script)</td><td>Tab Audio only &mdash; per-tab volume on pages you use</td></tr>
+  </tbody>
 </table>
+</div>
 
-<h2>8. Data retention and deletion</h2>
+<hr />
+
+<h2>9. Data retention and deletion</h2>
 <ul>
   <li><strong>Local data:</strong> Removed when you uninstall the extension or clear extension data in Chrome.</li>
   <li><strong>Google backup:</strong> Remains in your Google account until you delete it or disconnect backup in Settings.</li>
   <li><strong>Feedback:</strong> Retained in our Discord workspace only as long as needed for support and product planning.</li>
 </ul>
 
-<h2>9. Security</h2>
-<p>Because your data is stored locally (and optionally in your own Google account), its security depends on your device, browser, and Google account protections. Use device lock, a strong Google password, and Chrome's built-in security features.</p>
+<hr />
 
-<h2>10. Children</h2>
-<p>Orbit is not directed at children under 13. We do not knowingly collect personal information from children.</p>
+<h2>10. Security</h2>
+<p>Because your data is stored locally (and optionally in your own Google account), its security depends on your device, browser, and Google account protections. Use device lock, a strong Google password, and Chrome&rsquo;s built-in security features.</p>
 
-<h2>11. Changes to this policy</h2>
-<p>We may update this Privacy Policy from time to time. The "Last updated" date at the top will change when we do. Continued use of Orbit after an update means you accept the revised policy.</p>
+<hr />
 
-<h2>12. Contact</h2>
+<h2>11. Children</h2>
+<p>Weft is not directed at children under 13. We do not knowingly collect personal information from children.</p>
+
+<hr />
+
+<h2>12. Changes to this policy</h2>
+<p>We may update this Privacy Policy from time to time. The &ldquo;Last updated&rdquo; date at the top will change when we do. Continued use of Weft after an update means you accept the revised policy.</p>
+
+<hr />
+
+<h2>13. Contact</h2>
 <p>Questions about this Privacy Policy or your data:</p>
-<p><strong>Email:</strong> procrastinatingshadow@gmail.com</p>
+<p><strong>Email:</strong> weftlylabs@gmail.com</p>
+
+<footer>&copy; 2026 Weft. This policy applies to the Weft browser extension.</footer>
+
+</div>
+</body>
+</html>
