@@ -52,12 +52,12 @@
 <div class="wrap">
 
 <h1>Privacy Policy for Weft</h1>
-<p class="meta">Last updated: September 3, 2026 &middot; Contact: weftlylabs@gmail.com</p>
+<p class="meta">Last updated: September 13, 2026 &middot; Contact: weftlylabs@gmail.com</p>
 
 <p>Weft (&ldquo;we,&rdquo; &ldquo;our,&rdquo; or &ldquo;the Extension&rdquo;) is a Chrome extension that replaces your new tab with a personal dashboard. This Privacy Policy explains how your information is handled when you use Weft.</p>
 
 <div class="summary">
-  <strong>Summary:</strong> Weft is local-first. Your tasks, habits, settings, and other dashboard data stay on your device by default. We do not operate servers that store your dashboard data. Optional features may send limited data to third-party services only when you use those features (see below).
+  <strong>Summary:</strong> Weft works fully without an account, and your dashboard data stays on your device by default. If you choose to sign in, an optional account lets your dashboard sync across your devices through our backend (Supabase); see &sect;3a. We also send a small anonymous usage signal by default (see &sect;3b), which you can turn off. Optional features may send limited data to third-party services only when you use those features (see below).
 </div>
 
 <hr />
@@ -66,11 +66,11 @@
 <p>Weft does <strong>not</strong>:</p>
 <ul>
   <li>Require an account or sign-up to use the extension</li>
-  <li>Run analytics or telemetry to Weft-operated servers</li>
   <li>Sell your data</li>
   <li>Use your data for advertising or creditworthiness</li>
+  <li>Tie the anonymous usage signal in &sect;3b to your identity or account</li>
 </ul>
-<p>We do not operate user-data servers for your dashboard content.</p>
+<p>We do not operate servers that store your dashboard content unless you turn on the optional account and sync feature described in &sect;3a.</p>
 
 <hr />
 
@@ -96,6 +96,23 @@
   <li>You can disconnect at any time. Local data on your device is unaffected.</li>
 </ul>
 <p>This feature is <strong>opt-in</strong> and <strong>off by default</strong>.</p>
+
+<hr />
+
+<h2>3a. Optional Weft account and sync</h2>
+<p>If you choose to sign in (<strong>Settings &rarr; Account</strong>), currently via Google:</p>
+<ul>
+  <li>We collect your email address, name, and avatar image from Google, to identify your account.</li>
+  <li>Signing in does not turn sync on by itself; sync is a separate toggle, off until you choose it, with per-group switches (Tasks, Habits, Links &amp; shortcuts, Sticky notes, Jobs, Entertainment, Spaces &amp; widgets, Preferences) so you control exactly what leaves your device. Reminders never sync; they stay per device.</li>
+  <li>Data for the groups you enable is stored on our backend (Supabase) so it can reach your other signed-in devices. It is encrypted in transit (HTTPS) and access-controlled so only your signed-in account can read or write it.</li>
+  <li>Deleting an item you sync (a task, a link, a note, etc.) does not erase it from our backend immediately. It is kept, recoverable, for up to 15 days in case the deletion was a mistake, then automatically and permanently cleared.</li>
+  <li><strong>Delete account</strong> (Settings &rarr; Account) permanently removes your synced data and profile from our backend. Your local, on-device dashboard is not affected.</li>
+  <li>This feature is <strong>opt-in</strong> and <strong>off by default</strong>. Weft&rsquo;s core functionality never requires an account.</li>
+</ul>
+
+<h2>3b. Anonymous usage signal</h2>
+<p>Once a day per install, Weft sends a small anonymous signal: which widgets you have enabled, whether you use the Spaces feature, and the extension version. This is <strong>not</strong> tied to your account, your email, or any other identifier that could connect it back to you &mdash; it uses a random id generated for your install, stored only on your device.</p>
+<p>We use this to understand which parts of Weft are actually used, not to profile individuals. You can turn this off any time in <strong>Settings &rarr; Account</strong>.</p>
 
 <hr />
 
@@ -129,6 +146,8 @@
     <tr><td><strong>Finnhub</strong> (<code>finnhub.io</code>)</td><td>Stocks widget (alternate provider)</td><td>Same as above, if you choose Finnhub instead of Twelve Data</td></tr>
     <tr><td><strong>Picsum / Wallhaven</strong> (<code>picsum.photos</code>, <code>wallhaven.cc</code>)</td><td>Wallpaper shuffle, only if you set the shuffle source to &ldquo;online&rdquo;</td><td>A standard image request; no personal data</td></tr>
     <tr><td><strong>Google</strong> (<code>accounts.google.com</code>, <code>googleapis.com</code>)</td><td>Optional backup (see &sect;3)</td><td>OAuth sign-in and backup file to your Google account</td></tr>
+    <tr><td><strong>Google</strong> (<code>accounts.google.com</code>)</td><td>Optional account sign-in (see &sect;3a)</td><td>OAuth sign-in only; a separate Google API client from the backup feature above</td></tr>
+    <tr><td><strong>Supabase</strong></td><td>Optional account and sync (see &sect;3a, &sect;3b)</td><td>Your email/name/avatar at sign-in, the dashboard groups you choose to sync, and the daily anonymous usage signal</td></tr>
     <tr><td><strong>Discord</strong></td><td>Voluntary feedback (see &sect;4)</td><td>Only what you submit in the feedback form</td></tr>
   </tbody>
 </table>
@@ -174,6 +193,8 @@
 <ul>
   <li><strong>Local data:</strong> Removed when you uninstall the extension or clear extension data in Chrome.</li>
   <li><strong>Google backup:</strong> Remains in your Google account until you delete it or disconnect backup in Settings.</li>
+  <li><strong>Synced account data:</strong> Kept on our backend while your account exists and sync is on; a deleted item is kept up to 15 days for recovery before being permanently cleared. Deleting your account removes it entirely.</li>
+  <li><strong>Anonymous usage signal:</strong> One row per install per day; not linked to an account, so there is nothing account-specific to delete on request.</li>
   <li><strong>Feedback:</strong> Retained in our Discord workspace only as long as needed for support and product planning.</li>
 </ul>
 
