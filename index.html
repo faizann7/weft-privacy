@@ -52,7 +52,7 @@
 <div class="wrap">
 
 <h1>Privacy Policy for Weft</h1>
-<p class="meta">Last updated: September 17, 2026 &middot; Contact: weftlylabs@gmail.com</p>
+<p class="meta">Last updated: September 30, 2026 &middot; Contact: weftlylabs@gmail.com</p>
 
 <p>Weft (&ldquo;we,&rdquo; &ldquo;our,&rdquo; or &ldquo;the Extension&rdquo;) is a Chrome extension that replaces your new tab with a personal dashboard. This Privacy Policy explains how your information is handled when you use Weft.</p>
 
@@ -123,7 +123,7 @@
   </thead>
   <tbody>
     <tr><td><strong>Aladhan</strong> (<code>api.aladhan.com</code>)</td><td>Prayer times widget</td><td>City/country or latitude/longitude you configure or approve for prayer calculations</td></tr>
-    <tr><td><strong>BigDataCloud</strong> (<code>api.bigdatacloud.net</code>)</td><td>Prayer widget, only if you choose &ldquo;use device location&rdquo;</td><td>Your approximate latitude/longitude, sent once to convert coordinates into a city/country name</td></tr>
+    <tr><td><strong>BigDataCloud</strong> (<code>api.bigdatacloud.net</code>)</td><td>Prayer widget, only if you choose &ldquo;Use my location&rdquo; or &ldquo;Use approximate location&rdquo;</td><td>For &ldquo;Use my location&rdquo;: your latitude/longitude, sent once to convert coordinates into a city/country name. For &ldquo;Use approximate location&rdquo;: a request with no coordinates, from which BigDataCloud estimates your city from your IP address</td></tr>
     <tr><td><strong>TMDB / AniList</strong></td><td>Entertainment search &amp; posters</td><td>Search queries and public metadata requests (e.g. show/movie titles)</td></tr>
     <tr><td><strong>football-data.org</strong></td><td>Sports scores</td><td>Standard API requests; no personal dashboard data</td></tr>
     <tr><td><strong>native-stats.org</strong></td><td>Sports widget match detail</td><td>The public match ID being viewed; no personal data</td></tr>
@@ -139,7 +139,7 @@
   </tbody>
 </table>
 </div>
-<p>Prayer location may be entered manually or obtained via your browser&rsquo;s geolocation <strong>only when you explicitly choose</strong> to use device location. Coordinates are used to fetch prayer times (Aladhan) and a place name (BigDataCloud) and are not sent to Weft servers.</p>
+<p>Prayer location may be entered manually, obtained via your browser&rsquo;s geolocation <strong>only when you click &ldquo;Use my location&rdquo;</strong>, or estimated from your internet connection <strong>only when you click &ldquo;Use approximate location&rdquo;</strong>. Location is read once per click and never tracked in the background. It is used to fetch prayer times (Aladhan) and a place name (BigDataCloud). Your saved prayer location stays on your device, unless you are signed in with Preferences sync turned on, in which case it syncs to your account with your other settings (see &sect;3).</p>
 <p><strong>Stocks widget API key:</strong> the Stocks widget requires you to supply your own free API key from your chosen provider (Twelve Data or Finnhub). That key is stored locally on your device and is sent only to the provider you chose, to authenticate your own quote requests. Weft does not see, log, or transmit your key anywhere else.</p>
 <p><strong>GitHub token:</strong> the GitHub integration requires a personal access token you create yourself with the <code>notifications</code> scope. It is stored locally on your device and is sent only to GitHub. Weft does not see, log, or transmit your token anywhere else.</p>
 <p>Sports, entertainment, favicon, wallpaper, and stock quote requests are initiated to provide widget functionality, not to profile you.</p>
@@ -168,6 +168,7 @@
     <tr><td><code>scripting</code></td><td>Tab Audio volume control</td></tr>
     <tr><td><code>identity</code></td><td>Optional Weft account sign-in</td></tr>
     <tr><td><code>declarativeNetRequestWithHostAccess</code></td><td>Embedded Website widget: remove framing-block headers for the specific sites you embed (see &sect;7)</td></tr>
+    <tr><td><code>geolocation</code></td><td>Prayer widget: read your device location once, only when you click &ldquo;Use my location&rdquo; (see &sect;6)</td></tr>
     <tr><td>Host access to specific APIs</td><td>Sports, favicons, GitHub, Twitch, and feedback as described above</td></tr>
     <tr><td><code>&lt;all_urls&gt;</code> (content script)</td><td>Tab Audio only &mdash; per-tab volume on pages you use</td></tr>
   </tbody>
